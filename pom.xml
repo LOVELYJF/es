@@ -45,7 +45,7 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
-		<!--springboot整合swagger2,方便测试后台的restful接口  Swagger UI 查看地址：localhost:8888/swagger-ui.html -->
+		<!--1111springboot整合swagger2,方便测试后台的restful接口  Swagger UI 查看地址：localhost:8888/swagger-ui.html -->
 		<!--        https://blog.csdn.net/Alexshi5/article/details/89606232-->
 		<dependency>
 			<groupId>io.springfox</groupId>
