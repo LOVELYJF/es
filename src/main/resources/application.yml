@@ -1,7 +1,23 @@
+
+server:
+  port: 8888
+
 spring:
   data:
     elasticsearch:
       cluster-name: elasticsearch
       cluster-nodes: 192.168.197.128:9300
-server:
-  port: 8888
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.1.222:3306/hxpredb?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+  profiles:
+    active: false
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: mybatis/**/*Mapper.xml
+  typeAliasesPackage: com.owner.es.entity
+
